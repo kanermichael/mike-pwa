@@ -18,6 +18,11 @@ import {
     },
     gridItem: {
         marginBottom: theme.spacing(1) 
+    }, 
+    button: {
+        margin: theme.spacing(1),
+        backgroundColor: '#111B42',
+        color: 'white'
     }
   }));
   
@@ -69,7 +74,7 @@ import {
                       <Typography variant="body1" component="p" gutterBottom>
                         {mission.id}
                       </Typography>
-                         <Button variant="contained" color="primary">
+                         <Button variant="contained" className={classes.button}>
                             Ready for Debriefing
                         </Button>
                       </Paper>
