@@ -78,7 +78,7 @@ import {
                         {mission.id}
                       </Typography>
                          <Button variant="contained" className={classes.button}>
-                            Ready for Debriefing
+                            Ready for Briefing
                         </Button>
                       </Paper>
                     </Grid>
