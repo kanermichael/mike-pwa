@@ -5,7 +5,7 @@ import {
 } from "@apollo/client";
 import MissionsList from './pages/MissionsList';
 import header from './assets/mike.svg';
-import { AppBar, Button, IconButton, makeStyles, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, IconButton, makeStyles, Toolbar } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
