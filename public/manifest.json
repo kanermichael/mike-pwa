@@ -8,9 +8,9 @@
       "type": "image/x-icon"
     },
     {
-      "src": "rcg_logo.jpg",
+      "src": "logo.png",
       "type": "image/png",
-      "sizes": "512x268"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
