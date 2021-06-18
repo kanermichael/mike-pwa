@@ -23,6 +23,9 @@ import {
         margin: theme.spacing(1),
         backgroundColor: '#111B42',
         color: 'white'
+    },
+    title: {
+        margin: theme.spacing(3) 
     }
   }));
   
@@ -58,7 +61,7 @@ import {
       return (
         <Container maxWidth="md">
         <div className={classes.root}>
-        <Typography variant="h4" component="h1" align="center" gutterBottom>
+        <Typography variant="h4" component="h1" align="center" gutterBottom className={classes.title}>
         Available Missions
                       </Typography>
           {loading ? (
