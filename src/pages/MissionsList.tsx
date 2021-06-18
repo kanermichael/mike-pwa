@@ -17,7 +17,7 @@ import {
       color: theme.palette.text.secondary,
     },
     gridItem: {
-        marginBottom: theme.spacing(2) 
+        marginBottom: theme.spacing(1) 
     }
   }));
   
@@ -63,10 +63,10 @@ import {
                 {data && missions?.map(mission => (
                     <Grid item xs={12} sm={6} key={mission.id} className={classes.gridItem}>
                       <Paper className={classes.paper} elevation={3} >
-                      <Typography variant="h5" component="h3">
+                      <Typography variant="h5" component="h3" gutterBottom>
                         {mission.name}
                       </Typography>
-                      <Typography variant="body1" component="p">
+                      <Typography variant="body1" component="p" gutterBottom>
                         {mission.id}
                       </Typography>
                          <Button variant="contained" color="primary">
