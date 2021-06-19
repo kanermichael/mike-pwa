@@ -1,12 +1,12 @@
 // @ts-nocheck
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ApolloClient } from '@apollo/client'
-import {  CircularProgress } from '@material-ui/core';
+import { CircularProgress } from '@material-ui/core';
 
-import getApolloClient from './apolloClient'
-import App from './App'
+import getApolloClient from './apollo'
+import AppWrapper from './App'
 
-const PWAContainer = () => {
+const ApolloWrapper = () => {
   const [client, setClient] = useState<ApolloClient<any>>()
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const PWAContainer = () => {
     return <CircularProgress color="secondary" />
   }
 
-  return <App client={client} />
+  return <AppWrapper client={client} />
 }
 
-export default PWAContainer;
+export default ApolloWrapper;

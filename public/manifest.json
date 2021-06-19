@@ -1,6 +1,6 @@
 {
-  "short_name": "MIKE PWA",
-  "name": "MIKE PWA",
+  "short_name": "Mike PWA",
+  "name": "Mike PWA PoC",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
