@@ -21,17 +21,17 @@ const DELETE_USERS = gql`
 }
 `;
 
-const UPDATE_USERS = gql`
-mutation updateUsers($id: uuid, $name: String!) {
-  update_users(where: {id: {_eq: $id}}, _set: {name: $name}) {
-    affected_rows
-    returning {
-      id
-      name
-    }
-  }
-}
-`;
+// const UPDATE_USERS = gql`
+// mutation updateUsers($id: uuid, $name: String!) {
+//   update_users(where: {id: {_eq: $id}}, _set: {name: $name}) {
+//     affected_rows
+//     returning {
+//       id
+//       name
+//     }
+//   }
+// }
+// `;
 
 const UserListContainer = () => {
   const { loading, error, data } = useQuery<any>(USERS_QUERY);
