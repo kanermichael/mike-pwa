@@ -7,7 +7,7 @@ import { CachePersistor } from "apollo-cache-persist";
 import { PersistentStorage, PersistedData } from "apollo-cache-persist/types";
 
 const API_HOST = 'https://api.spacex.land/graphql/'
-const SCHEMA_VERSION = '1'
+const SCHEMA_VERSION = '2'
 const SCHEMA_VERSION_KEY = 'apollo-schema-version'
 
 const getApolloClient = async () => {
