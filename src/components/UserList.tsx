@@ -27,9 +27,10 @@ const useStyles = makeStyles((theme) => ({
 
 interface UserListProps {
   users: User[];
+  handleDelete: (id: string) => void
 }
 
-const UserList: FC<UserListProps> = ({ users }) => {
+const UserList: FC<UserListProps> = ({ users, handleDelete }) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -40,7 +41,7 @@ const UserList: FC<UserListProps> = ({ users }) => {
         {users.map((user, idx) => {
           return (
             <Grid item xs={12} key={user.id} className={classes.gridItem}>
-              <UserRow user={user} />
+              <UserRow user={user}  handleDelete={handleDelete}/>
             </Grid>
           )}
         )}
